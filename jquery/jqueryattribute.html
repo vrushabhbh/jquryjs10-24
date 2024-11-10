@@ -1,0 +1,21 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+<input type="checkbox" name="" id="x1">
+<input type="text" name="" id="x2">
+
+
+<script>
+    $("#x1").change(function(){  //
+      var result=$(this).is(":checked")     //it is action as the jquery filter it gives true or false on basis of checked or not
+       console.log(result);   
+       if(result){
+        $("#x2").attr("type","number");   
+    }else{
+
+        $('#x2').attr('type','password');
+    }
+
+
+   })
+</script>

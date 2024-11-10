@@ -1,0 +1,18 @@
+<script>
+    var reg = /^[1-9][0-9][0-9][0-9][0-9][0-9]$/    //it is the boundry of the regular expression
+    var pincode = 441208;
+    var result = reg.test(pincode)
+    console.log(result)
+    var exp = /^ [6-9][0-9]{9}$/        // it can give the range to the mbil number
+    var mobile = 9421205885
+    var result1 = exp.test(mobile)
+    console.log(result1)
+    var exp3 = /^ [A-Za-z ]{5}[0-9]{4}[A-Za-z]$/        //
+    var pan = 'BLRPA1234N'
+    var result2 = exp3.test(pan)
+    console.log(result2)
+    var exp4= /^[a-zA-Z]([A-Za-z ]+)?[A-Za-z]$/
+    var name = 'aditya thomas nemade'
+    var result4 = exp4.test(name)
+    console.log(result4)
+</script>
